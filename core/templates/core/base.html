@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Index</title>
+  <title>{% block title %}{% endblock %}</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -26,13 +26,13 @@
           <nav class="navbar col-2">
             <ul class="navbar-nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Main</a>
+                    <a class="nav-link" href="{% url 'test' %}">Main</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">History</a>
+                    <a class="nav-link" href="{% url 'history' %}">History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Report</a>
+                    <a class="nav-link" href="{% url 'report' %}">Report</a>
                 </li>
             </ul>
           </nav>
