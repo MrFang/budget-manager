@@ -15,7 +15,7 @@ class Account(models.Model):
 
 class Transaction(models.Model):
     amount = models.PositiveIntegerField()
-    commentaty = models.TextField(blank=True)
+    commentary = models.TextField(blank=True)
 
     class Meta:
         abstract = True
